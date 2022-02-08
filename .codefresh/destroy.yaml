@@ -1,0 +1,15 @@
+version: "1.0"
+
+stages:
+  - destroy
+
+steps:
+  destroy:
+    title: Pretedning Destroy Deployment
+    stage: destroy
+    type: "freestyle"
+    image: alpine:latest
+    commands:
+      - echo Destroy Deployment Done
+
+

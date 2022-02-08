@@ -1,0 +1,16 @@
+version: "1.0"
+
+stages:
+  - deploy
+
+steps:
+  deploy:
+    title: Pretending Deploy
+    stage: deploy
+    type: "freestyle"
+    image: "ubuntu:latest"
+    shell: bash
+    commands:
+      - for i in {0..30}; do echo "deploy" && sleep 1; done
+
+
